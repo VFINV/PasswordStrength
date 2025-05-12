@@ -43,7 +43,7 @@ def check_password_strength(password):
     else:
         print("❌ Weak password.")
 
-    # Suggestions
+    # Suggestions to improve the password
     if suggestions:
         print("\n🛠️ Suggestions to improve your password:")
         for s in suggestions:
