@@ -35,22 +35,22 @@ def check_password_strength(password):
         suggestions.append("Include at least one special character (!@#$ etc).")
 
     # Final verdict
-    print("\n🔎 Strength Check Result:")
+    print("\n Strength Check Result:")
     if strength_points == 5:
-        print("✅ Strong password!")
+        print("Strong password!")
     elif 3 <= strength_points < 5:
-        print("⚠️ Medium strength password.")
+        print("Medium strength password.")
     else:
-        print("❌ Weak password.")
+        print("Weak password.")
 
     # Suggestions to improve the password
     if suggestions:
-        print("\n🛠️ Suggestions to improve your password:")
+        print("\n Suggestions to improve your password:")
         for s in suggestions:
             print(f"- {s}")
 
 def main():
-    print("=== 🛡️ Password Strength Checker ===")
+    print("=== Password Strength Checker ===")
     password = input("Enter your password to check: ").strip()
     check_password_strength(password)
 
